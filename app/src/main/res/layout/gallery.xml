@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+    <Button
+        android:id="@+id/access_gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open Gallery"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true" />
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/openedimage"
+        android:layout_above="@+id/access_gallery"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gallerynext"
+        android:text="Next"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible"
+        android:layout_toRightOf="@id/access_gallery"/>
+</RelativeLayout>
